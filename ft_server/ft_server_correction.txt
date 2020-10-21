@@ -1,0 +1,20 @@
+General instructions
+verifications
+- Check if all the necessary configuration files of the server are in the folder srcs.
+- Check if the Dockerfile is at the root of the repository.
+- Run the "docker build ." command.
+Mandatory part
+The project consists of setting up a functional web server with Docker. Check if all the next points are respected. At the first error, you stop the correction and set the grade to zero.
+Docker environment
+- Verify if the evaluated has only one container.
+- Verify if the container is build with Debian Buster.
+- Verify if you can run the container with "docker run xxx" without problems. (xxx is the name of the docker you've just built)
+Server instructions
+- Verify if the evaluated uses Nginx (you can read the Dockerfile).
+- Verify if the server runs multiple services (WordPress and phpMyAdmin).
+- Verify if the server redirects to the correct website, according to the url.
+- Verify if Nginx uses the SSL protocol.
+- Verify if the server is running with an autoindex which can be deactivated when the container is launched (via an environment variable for example).
+Run website, run!
+- Verify if the WordPress website runs entirely with the MySQL database. You can go to the site, log in, and watch the database.
+- Verify if the SQL database works with phpMyAdmin. You should see the WordPress tables and data.

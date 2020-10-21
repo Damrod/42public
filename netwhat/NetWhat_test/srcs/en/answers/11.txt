@@ -1,0 +1,4 @@
+128 bits
+64 bits
+32 bits
+128 bytes

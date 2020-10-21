@@ -1,0 +1,48 @@
+Parte obligatoria
+Compruebe la librería
+- La librería solo debe tener archivos .s
+- El Makefile no debe hacer relink.
+- Utilice un main.c y enlácelo a la biblioteca con '-L. -lasm'
+- Para cada función, verifica que los retornos de error de las syscalls
+son verificados y controlados correctamente
+con la ayuda de errno (#include ) en un archivo C.
+
+ft_strlen
+- Pruebe la función ft_strlen con una cadena vacía
+- Pruebe la función ft_strlen con una cadena muy larga
+ft_strcpy
+- Pruebe la función ft_strcpy con una cadena vacía
+- Pruebe la función ft_strcpy con una cadena muy larga
+ft_strcmp
+- Pruebe la función ft_strcmp con dos cadenas vacías
+- Pruebe la función ft_strcmp con una cadena vacía como primer argumento
+- Pruebe la función ft_strcmp con una cadena vacía como segundo argumento
+- Pruebe la función ft_strcmp con varias cadenas, iguales o no, intercámbielas
+ft_write
+- Pruebe la función ft_write con el stdout
+- Pruebe la función ft_write con un file descriptor abierto
+- Pruebe la función ft_write con un file descriptor incorrecto
+- Compruebe el valor de retorno
+ft_read
+- Pruebe la función ft_read con el stdin
+- Pruebe la función ft_read con un file descriptor abierto
+- Pruebe la función ft_read con un file descriptor incorrecto
+- Compruebe el valor de retorno
+ft_strdup
+- Pruebe la función ft_strup con una cadena vacía
+- Pruebe la función ft_strup con una cadena muy larga
+Extras
+Solo se mirará la parte extra si su parte obligatoria es impecable. Eso supone que tendrá que completar la parte obligatoria desde el principio hasta el final y que su gestión de errores debe ser perfecta, incluso frente a situaciones retorcidas. Si durante la evaluación no se han atribuido todos los puntos, no se contabilizará ningún punto en la parte extra.
+
+ft_atoi_base
+- Compruebe que ft_atoi_base funciona como debe
+- Pruebe con una base 2 y con una base 314
+ft_list_push
+- Compruebe que ft_list_push funciona como debe
+ft_list_size
+- Compruebe que ft_list_size funciona como debe
+ft_list_sort
+- Compruebe que ft_list_sort funciona como debe
+ft_list_remove_if
+- Compruebe que ft_list_remove_if funciona como debe
+- Puede utilizar ft_strcmp para hacer la prueba

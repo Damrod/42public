@@ -1,0 +1,15 @@
+#!/bin/bash
+# this is a script that creates two scripts that will respectively hibernate and
+# put to sleep the host system
+sudo tee /usr/local/bin/gotosleep <<EOF
+dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+sleep 2
+sudo /usr/sbin/s2both
+EOF
+sudo chmod +x /usr/local/bin/gotosleep
+sudo tee /usr/local/bin/gotohibernation <<EOF
+dbus-send --type=method_call --dest=org.gnome.ScreenSaver /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
+sleep 2
+sudo systemctl hibernate
+EOF
+sudo chmod +x /usr/local/bin/gotohibernation
