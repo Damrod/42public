@@ -1,4 +1,21 @@
 #!/bin/bash
+##
+## Adapted and expanded from :
+## https://github.com/diogovk/c2nasm/blob/master/c2nasm.sh
+##
+###########################
+set -e
+help(){
+	echo "$1: Formats and cleans up the output of objconv to nasm"
+	echo "usage: $1 <sourcefile> without the extension, it will look"
+	echo 'for <sourcefile.out> in the first place or <sourcefile.o>'
+	echo "if it couldn't find <sourcefile.out> secondly."
+	echo "it is meant both as a tool for the script c2nasm, and"
+	echo "by itself to cleanup the dissasembly output for an executable"
+	echo "not just the object file."
+	exit 0
+}
+
 NASM_FILE="${1}.nasm"
 if [[ -f "${1}.out" ]]; then
 	EXEC="${1}.out"

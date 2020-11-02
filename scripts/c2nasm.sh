@@ -1,9 +1,20 @@
 #!/bin/bash
+##
+## Adapted and expanded from :
+## https://github.com/diogovk/c2nasm/blob/master/c2nasm.sh
+## Changelog:
+## split in two files: c2nasm and fobjconv
+## added some flags to dissaseble for different architectures
+## added the ability to accept optimizing flags
+## added the ability to use clang besides gcc as a compiler.
+## removed the "linking back to test" phase if a main.c is not provided.
+##
+###########################
 set -e
 help(){
   echo "$1: Uses gcc and objconv to convert a C program to nasm"
   echo "usage: $1 <sourcefile.c>"
-  echo 'takes "-O0" ... "-O3" flags for compiling'
+  echo 'takes "-O0" ... "-O3" .. "-Os" flags for compiling'
   echo '"x86" flag for 32bit architecture compilation'
   exit 0
 }

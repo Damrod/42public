@@ -1,4 +1,10 @@
 #!/bin/bash
+##
+## Adapted from :
+## https://github.com/radareorg/cutter/blob/master/docker/Makefile
+##
+######################################
+
 DIR="/home/alvaro/Documents/rev-engineering"
 LUID=$(id -u)
 LGID=$(id -g)
