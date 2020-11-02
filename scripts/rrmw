@@ -1,2 +1,0 @@
-#!/bin/bash
-rr replay -d gdbmw

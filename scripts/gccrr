@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -O0 -ggdb3 -o $1 -std=c89 -Wextra -Wall -Werror $2
