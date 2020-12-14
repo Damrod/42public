@@ -9,4 +9,3 @@ if [ ${AUTOINDEX} = "on" ]
    then
 	   sed -i 's@^\([^#]\)*#[^a]*autoindex@\1autoindex@g' /etc/nginx/sites-available/*
 fi
-
