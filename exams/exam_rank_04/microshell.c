@@ -131,6 +131,9 @@ int exec_program(char *token, char ***myarg, char **environ)
 			{
 				if (waitpid(pid, &status, 0) == -1)
 					exit_fatal("waitpid", __LINE__);
+				if (WIFEXITED(status))
+					ret = WEXITSTATUS(status);
+
 			}
 			if (pipe_open[i])
 			{
@@ -142,8 +145,6 @@ int exec_program(char *token, char ***myarg, char **environ)
 				if (close(pipes[i - 1][SIDE_OUT]))
 					exit_fatal("close", __LINE__);
 			}
-			if (WIFEXITED(status))
-				ret = WEXITSTATUS(status);
 		}
 		i++;
 	}
