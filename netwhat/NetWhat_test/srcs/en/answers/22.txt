@@ -1,6 +1,0 @@
-TCP is a connection-oriented protocol
-TCP support Broadcasting
-Sequencing of data is a feature of TCP(this means that packets arrive in-order at the receiver)
-TCP is reiable as it guarantees delivery of data to the destination router
-TCP is faster is comparatively slower than UDP
-TCP provides extensive error chcking mechanisms. It is because it provides flow control and acknowledgment of data

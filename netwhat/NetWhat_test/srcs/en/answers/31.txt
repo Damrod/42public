@@ -1,6 +1,0 @@
-UDP is comparatively slower than TCP
-UDP has only the basic error checking mechanism using checksums
-UDP supports Broadcasting
-UDP is a datagram-oriented protocol
-The delivery of data to the destination cannot be guaranteed in UDP
-There is no sequencing of data in UDP. If ordering is required, it has to be managed by the application layer
